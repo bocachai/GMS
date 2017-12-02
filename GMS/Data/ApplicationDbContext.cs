@@ -10,8 +10,25 @@ namespace GMS.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        #region Auxiliar tables
         public DbSet<EntityType> EntityTypes { get; set; }
         public DbSet<Title> Titles { get; set; }
+        public DbSet<RelationshipType> RelationshipTypes { get; set; }
+        public DbSet<Title> Countries { get; set; }
+        #endregion
+
+        #region Core Tables
+        public DbSet<Person> People { get; set; }
+        public DbSet<Organisation> Organisations { get; set; }
+        #endregion
+
+        #region Relation Tablels
+        public DbSet<PersonName > PersonNames { get; set; }
+        public DbSet<OrganisationName> OrganisationNames { get; set; }
+        public DbSet<EntityEmailAddress> EntityEmailAddresses { get; set; }
+        public DbSet<EntityAddress> EntityAddresses { get; set; }
+        public DbSet<EntityPhone> EntityPhones { get; set; }
+        #endregion 
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)

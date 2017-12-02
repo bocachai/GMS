@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace GMS.Models
 {
-    public class EntityEmailAddress
+    public class EntityEmailAddress:BaseModel
     {
         #region Properties
         public Entity Entity { get; set; } = new Entity();

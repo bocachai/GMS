@@ -5,8 +5,7 @@ using System.Threading.Tasks;
 
 namespace GMS.Models
 {
-    public class Title: LookupTable
+    public class RelationshipType:LookupTable 
     {
-       
     }
 }

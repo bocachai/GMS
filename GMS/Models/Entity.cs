@@ -8,6 +8,7 @@ namespace GMS.Models
     public class Entity: BaseModel 
     {
         #region Properties
+        public bool IsSubscribedToNewsLetter { get; set; }
         public EntityType EntityType { get; set; } = new EntityType();
         public List<EntityName> Names { get; set; } = new List<EntityName>();
         public List<EntityAddress> Addressess { get; set; } = new List<EntityAddress>();

@@ -5,11 +5,10 @@ using System.Threading.Tasks;
 
 namespace GMS.Models
 {
-    public class DetailType:BaseModel 
+    public class DetailType:LookupTable  
     {
         #region Properties
-        public string Code { get; set; }
-        public string Description { get; set; }
+
         #endregion 
     }
 }
