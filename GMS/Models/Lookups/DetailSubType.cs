@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace GMS.Models
+namespace GMS.Models.Lookups
 {
-    public class DetailSubType:BaseModel 
+    public class DetailSubType:LookupTable 
     {
         #region Properties
-        public string Code { get; set; }
-        public string Description { get; set; }
         public bool IsDefault { get; set; }
         public DetailType DetailType { get; set; } = new DetailType();
         #endregion 

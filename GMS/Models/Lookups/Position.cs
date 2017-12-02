@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace GMS.Models
+namespace GMS.Models.Lookups
 {
-    public class Country: LookupTable
+    public class Position
     {
-        
     }
 }

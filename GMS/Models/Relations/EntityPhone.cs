@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GMS.Models.Core;
+using GMS.Models.Lookups;
 
-namespace GMS.Models
+namespace GMS.Models.Relations
 {
     public class EntityPhone:BaseModel 
     {

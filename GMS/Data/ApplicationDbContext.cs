@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using GMS.Models;
+using GMS.Models.Core;
+using GMS.Models.Lookups;
+using GMS.Models.Relations;
 
 namespace GMS.Data
 {
